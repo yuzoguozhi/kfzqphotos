@@ -27,7 +27,8 @@ section, summary, time, mark, audio, video {
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;}
+	display: block;
+	}
 
 body {
 	line-height: 1;
@@ -83,7 +84,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #101214;
+		background: #0c0c0c;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -98,11 +99,11 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #dadada;
+		color: #eeeeee;
 		font-family: "MiSans Regular", sans-serif;
 		font-size: 16pt;
 		letter-spacing: 0.015em;
-		font-weight: 400;
+		font-weight:none;
 		line-height: 1.75em;
 	}
 
@@ -124,7 +125,7 @@ input, select, textarea {
 
 	strong, b {
 		color: #787878;
-		font-weight: 400;
+		font-weight: 600;
 	}
 
 	em, i {
@@ -149,16 +150,19 @@ input, select, textarea {
 		}
 
 	h1 {
+		font-weight: 400;
 		font-size: 2em;
 		line-height: 1.5em;
 	}
 
 	h2 {
+		font-weight: 600;
 		font-size: 2em;
 		line-height: 1.5em;
 	}
 
 	h3 {
+		font-weight: 600;
 		font-size: 1.25em;
 		line-height: 1.5em;
 	}
@@ -2075,7 +2079,7 @@ input, select, textarea {
 				border-radius: 0.35em;
 				border: solid 3px rgba(255, 255, 255, 0.5);
 				color: #fff;
-				content: 'View';
+				content: '查看原图';
 				display: inline-block;
 				font-size: 0.8em;
 				font-weight: 400;
@@ -2451,7 +2455,7 @@ input, select, textarea {
 		color: #ffffff !important;
 		cursor: pointer;
 		display: inline-block;
-		font-weight: 400;
+		font-weight: 600;
 		height: 3.15em;
 		height: calc(2.75em + 6px);
 		line-height: 2.75em;
@@ -2466,17 +2470,18 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		input[type="button"]:hover,
 		.button:hover {
+			background-color: #E20613;
 			border-color: #E20613;
-			color: #E20613 !important;
+			color: #ffffff !important;
 		}
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
 		.button:active {
-			background-color: rgba(73, 191, 157, 0.1);
-			border-color: #E20613;
-			color: #E20613 !important;
+			background-color: #C7050F;
+			border-color: #C7050F;
+			color: #ffffff !important;
 		}
 
 		input[type="submit"].icon,
@@ -2528,16 +2533,16 @@ input, select, textarea {
 			input[type="reset"].primary:hover,
 			input[type="button"].primary:hover,
 			.button.primary:hover {
-				background-color: #5cc6a7;
-				border-color: #5cc6a7;
+				background-color: #d80614e0;
+				border-color: #d80614e0;
 			}
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
 			input[type="button"].primary:active,
 			.button.primary:active {
-				background-color: #3eb08f;
-				border-color: #3eb08f;
+				background-color: #d80614e0;
+				border-color: #d80614e0;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2691,7 +2696,7 @@ input, select, textarea {
 	}
 
 		#main > section {
-			border-top: solid 2px #E30613;
+			border-top: solid 2px #E20613;
 			margin: 4em 0 0 0;
 			padding: 4em 0 0 0;
 		}
@@ -2816,6 +2821,7 @@ input, select, textarea {
 
 		.poptrox-popup .caption {
 			background: #fff;
+			color:#0c0c0c;
 			bottom: 0;
 			cursor: default;
 			font-size: 0.9em;
@@ -3079,8 +3085,8 @@ input, select, textarea {
 
 			#footer {
 				background-attachment: scroll;
-				background-color: #1f1815;
-				background-image: url("images/overlay.png"), url("../../images/bg.jpg");
+				background-color: #161616;
+				/* background-image: url("images/overlay.png"), url("../../images/bg.jpg"); */
 				background-position: top left,						bottom center;
 				background-repeat: repeat,							no-repeat;
 				background-size: auto,							cover;
